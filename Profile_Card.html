@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Rasamalla - Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: hsl(156, 89%, 68%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .profile-card {
+            background: rgb(200, 207, 215);
+            max-width: 400px;
+            width: 90%;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            overflow: hidden;
+            border: 4px solid #303235;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .designation {
+            color: #007bff;
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .bio {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: #666;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-img">
+            <img src="Abhi_img.jpg" alt="Abhishek Rasamalla">
+        </div>
+        <h1 class="name">Abhishek Rasamalla</h1>
+        <p class="designation">Aspiring Full Stack Developer</p>
+        <p class="bio">
+            As a Full Stack Developer, I bring a strong foundation in both front-end and back-end technologies. I am proficient in JavaScript and React as well as backend technologies such as Java, SpringBoot for efficient server-side functionality and databases like  MySQL. Additionally, I am familiar with DevOps CI/CD pipelines, AWS. I am passionate about developing high-quality applications that meet user needs and drive business success.
+        </p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/abhishek-rasamalla" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/abhishekrasamalla" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+</html>
